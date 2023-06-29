@@ -1,0 +1,110 @@
+@import url('htpps://fonts.googleaps.com/css2?family=Acme&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+} 
+
+header{
+	background: linear-gradient(90deg, rgba(100, 158, 130, 1) 0%, rgba(165, 29, 35, 1) 50%, rgba(180, 276, 169, 1) 100%);
+	padding: : 30px 40px;
+	color: white;
+	text-align: center;
+}
+
+h1 {
+	font-family: 'Acme', sans-serif;
+	letter-spacing:  2px;
+	margin-bottom: 10px;
+}
+
+/*We want to style visible elements*/
+input{
+	width: 80%;
+	margin-right: 0;
+	padding: 0;
+	border: none;
+	font-size: 10px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.addBtn{
+	background: #d66d6d;
+	text-align: center;
+	color: #f1f1f1;
+	width: 20%;
+	margin-left: 0;
+	padding: 10px;
+	transition: 0.3s;
+	font-size: 10px;
+	font-weight: bold;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	cursor: pointer;
+}
+
+.addBtn:hover{
+	background-color: #bbb;
+	color: #f1f1f1;
+}
+
+/*elements from user input*/
+ul li{
+	cursor: pointer;
+	position: relative;
+	padding: 12px 8px 12px 40x;
+	list-style-type: none;
+	background: #eee;
+	font-size: 14px;
+	transition: 0.2s;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+/* make the list items unselectable*/
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-ser-select: none;
+user-select:none;
+}
+
+ul li:nth-child(even){
+	background: #611d59
+	/* #171616*/
+}
+
+ul li:hover{
+	background: #ddd
+	/*#d66d6d*/
+}
+
+ul li.checked{
+	background: #888
+	color:#fff;
+	text-decoration: line-through;
+}
+
+ul li.checked::before {
+	content: "";
+	position: absolute;	
+	border-color:#fff;
+	border-style: solid;
+	border-width: 0 2px 2px 0;
+	top: 10px;
+	left: 15px;
+	transform: rotate(45deg);
+	height: 15px;
+	width: 7px;
+}
+
+.far {
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 12px 16px 12px 16px; 
+}
+
+.far:hover {
+	background-color: tomato;
+	color: white;
+}
+
+
